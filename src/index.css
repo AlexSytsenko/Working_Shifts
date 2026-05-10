@@ -1,0 +1,271 @@
+:root {
+  /* ---------- COLORS ---------- */
+
+  --text: #6b7280;
+
+  /* h1 */
+  --title-main: #f3f4f6;
+
+  /* h2 */
+  --title-section: #111827;
+
+  --bg: #ffffff;
+
+  --bg-dark: #0f111a;
+
+  --card-bg: #ffffff;
+
+  --border: #e5e7eb;
+
+  --code-bg: #f4f4f5;
+
+  --accent: #7c3aed;
+
+  --accent-hover: #6d28d9;
+
+  --accent-bg: rgba(124, 58, 237, 0.1);
+
+  --accent-border: rgba(124, 58, 237, 0.4);
+
+  --shadow:
+    rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+  /* ---------- TYPOGRAPHY ---------- */
+
+  --sans:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+
+  --heading:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+
+  --mono:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+
+  font-family: var(--sans);
+
+  font-size: 18px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.2px;
+
+  color: var(--text);
+
+  background: var(--bg-dark);
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+
+  background: var(--bg-dark);
+
+  color: var(--text);
+
+  font-family: var(--sans);
+}
+
+/* ---------- ROOT ---------- */
+
+#root {
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  min-height: 100vh;
+
+  padding: 24px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  font-family: var(--heading);
+
+  line-height: 1.2;
+}
+
+/* ---------- MAIN TITLE ---------- */
+
+h1 {
+  color: var(--title-main);
+
+  font-size: 56px;
+
+  font-weight: 700;
+
+  letter-spacing: -2px;
+
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+/* ---------- SECTION TITLES ---------- */
+
+h2 {
+  color: var(--title-section);
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.5px;
+
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ---------- TEXT ---------- */
+
+p {
+  margin: 0;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+/* ---------- BUTTON RESET ---------- */
+
+button {
+  font-family: inherit;
+}
+
+/* ---------- CODE ---------- */
+
+code,
+.counter {
+  font-family: var(--mono);
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border-radius: 6px;
+
+  color: var(--title-section);
+
+  background: var(--code-bg);
+}
+
+code {
+  padding: 4px 8px;
+
+  font-size: 14px;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+
+  #root {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 42px;
+
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+  #root {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 34px;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+
+    margin-bottom: 18px;
+  }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+  #root {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

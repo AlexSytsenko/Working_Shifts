@@ -1,0 +1,35 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* планшет */
+@media (min-width: 768px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* десктоп */
+@media (min-width: 1024px) {
+  .container {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

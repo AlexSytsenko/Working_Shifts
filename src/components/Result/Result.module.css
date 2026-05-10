@@ -1,0 +1,20 @@
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* адаптив */
+@media (min-width: 768px) {
+  .row {
+    font-size: 16px;
+  }
+}

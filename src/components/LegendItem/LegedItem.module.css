@@ -1,0 +1,33 @@
+.legend {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 16px;
+}
+
+.legendItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+.dot {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}

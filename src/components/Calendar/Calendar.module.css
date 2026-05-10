@@ -1,0 +1,213 @@
+.wrapper {
+  margin-top: 16px;
+
+  padding: 16px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08);
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+/* ---------- Заголовок ---------- */
+
+.title {
+  text-align: center;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+
+  font-size: 18px;
+
+  color: #1a1a1a;
+}
+
+/* ---------- Calendar ---------- */
+
+:global(.MuiDateCalendar-root) {
+  width: 100%;
+
+  max-width: 100%;
+}
+
+/* ---------- Header ---------- */
+
+:global(.MuiPickersCalendarHeader-root) {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 12px;
+}
+
+:global(.MuiPickersArrowSwitcher-root) {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+}
+
+:global(.MuiPickersCalendarHeader-labelContainer) {
+  margin-right: 0 !important;
+}
+
+:global(.MuiPickersCalendarHeader-label) {
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #111827;
+}
+
+/* ---------- Week labels ---------- */
+
+:global(.MuiDayCalendar-weekDayLabel) {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #6b7280;
+}
+
+/* ---------- Day ---------- */
+
+:global(.MuiPickersDay-root) {
+  font-size: 14px;
+
+  margin: 2px;
+
+  transition:
+    all 0.2s ease-in-out;
+}
+
+:global(.MuiPickersDay-root:hover) {
+  transform: scale(1.05);
+}
+
+/* ---------- Today ---------- */
+
+:global(.MuiPickersDay-today) {
+  border: none !important;
+}
+
+/* ---------- Legend ---------- */
+
+.legend {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 16px;
+}
+
+.legendItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+.dot {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 12px;
+
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  :global(.MuiPickersCalendarHeader-root) {
+    gap: 10px;
+  }
+
+  :global(.MuiPickersCalendarHeader-label) {
+    font-size: 14px;
+  }
+
+  :global(.MuiDayCalendar-weekDayLabel) {
+    font-size: 11px;
+  }
+
+  :global(.MuiPickersDay-root) {
+    font-size: 12px;
+
+    margin: 1px;
+  }
+
+  .legend {
+    gap: 8px;
+  }
+
+  .legendItem {
+    font-size: 12px;
+  }
+
+  .dot {
+    width: 10px;
+
+    height: 10px;
+  }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  :global(.MuiPickersDay-root) {
+    font-size: 15px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
