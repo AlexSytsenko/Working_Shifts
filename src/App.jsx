@@ -6,6 +6,7 @@ import styles from "./App.module.css";
 import Controls from "./components/Controls/Controls";
 import Result from "./components/Result/Result";
 import Calendar from "./components/Calendar/Calendar";
+import Footer from "./components/Footer/Footer";
 
 import { useShiftCalculator } from "./hooks/useShiftCalculator";
 
@@ -36,6 +37,7 @@ export default function App() {
         visibleMonth={visibleMonth}
         setVisibleMonth={setVisibleMonth}
       />
+      <Footer />
     </div>
   );
 }
