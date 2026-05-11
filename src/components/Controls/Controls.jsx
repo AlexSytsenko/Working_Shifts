@@ -12,7 +12,7 @@ export default function Controls({
     <div className={styles.card}>
       <h2>Вхідні дані</h2>
 
-      <label>Сьогоднішній статус</label>
+      <label>Сьогоднішній статус (виберіть поточний статус)</label>
 
       <select
         className={styles.input}
